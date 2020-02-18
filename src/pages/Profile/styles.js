@@ -4,70 +4,71 @@ import { darken } from 'polished';
 export const Container = styled.div`
   max-width: 600px;
   margin: 50px auto;
-
-  
-  form{
+  form {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-
-    input{
+    input {
       background: rgba(0, 0, 0, 0.1);
       border: 0;
       border-radius: 4px;
       height: 44px;
       padding: 0 15px;
-      color: #FFF;
-      margin:  0 0 10px;
-
-      &::placeholder{
+      color: #fff;
+      margin: 0 0 10px;
+      &::placeholder {
         color: rgba(255, 255, 255, 0.7);
       }
     }
-
-    span{
-      color: #Fb6f91;
+    span {
+      color: #fb6f91;
       align-self: flex-start;
       margin: 0 0 10px;
       font-weight: bold;
     }
-
-    hr{
+    hr {
       border: 0;
       height: 1px;
       background: rgba(255, 255, 255, 0.2);
       margin: 10px 0 20px;
     }
-
-    button{
+    button {
       margin: 5px 0 0;
       height: 44px;
       background: #3b9eff;
       font-weight: bold;
-      color: #FFF;
+      color: #fff;
       border: 0;
       border-radius: 4px;
       font-size: 16px;
       transition: background 0.2s;
-
-      &:hover{
-        background: ${darken(0.08, '#3b9eff')};
+      &:hover {
+        background: ${darken(0.03, '#3b9eff')};
       }
     }
-  }    
-    > button{
-      width: 100%;
-      margin: 10px 0 0;
-      height: 44px;
-      background: #f64c75;
-      font-weight: bold;
-      color: #FFF;
-      border: 0;
-      border-radius: 4px;
+    a {
+      color: #fff;
+      margin-top: 15px;
       font-size: 16px;
-      transition: background 0.2s;
-
-      &:hover{
-        background: ${darken(0.08, '#f64c75')};
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
       }
-    }`;
+    }
+  }
+  > button {
+    width: 100%;
+    margin: 15px 0 0;
+    height: 44px;
+    background: #f64c75;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.2s;
+    &:hover {
+      background: ${darken(0.03, '#f64c75')};
+    }
+  }
+`;
