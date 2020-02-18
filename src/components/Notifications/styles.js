@@ -71,6 +71,8 @@ p{
 time{
   font-size: 12px;
   opacity: 0.6;
+  display: block;
+  margin-bottom: 5px;
 }
 
 button{
@@ -78,9 +80,7 @@ button{
   border: 0;
   background: none;
   color: ${lighten(0.2, '#7159c1')};
-  padding: 0 5px;
-  margin: 0 5px;
-  border-left: 1px solid rgba(255, 255, 255, 0.10);
+  
 }
 
 ${props => props.unread && css`
@@ -91,6 +91,7 @@ ${props => props.unread && css`
     height: 8px;
     background: #ff892e;
     border-radius: 50%;
+    margin-left: 10px;
   }
 `}
 `;
